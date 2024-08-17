@@ -8,7 +8,7 @@ contract TokenTest is Test {
     Token public token;
 
     function setUp() public {
-        token = new Token("zuniswap token",'zuni',10e18*(10**18));
+        token = new Token("USDC",'USDC',10e18*(10**18));
     }
     function test_getBalance()external{
         token.balanceOf(address(this));
